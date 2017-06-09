@@ -4,5 +4,17 @@
 }
 
 div, p, strong {
-    background-color: antiquewhite;
+    /*background-color: antiquewhite;*/
+}
+
+p.slide_class {
+    background-color: black;
+    color: wheat
+}
+
+div.animate_div {
+    width: 200px;
+    height: 200px;
+    background-color: goldenrod;
+    color: green;
 }

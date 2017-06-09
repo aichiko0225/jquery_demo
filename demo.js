@@ -25,9 +25,9 @@ $(function () {
     $('.box_02').css('color', 'blue');
 
     //$('div').css('color', 'black');
-    $('div .box_02').css('color', 'red')
+    $('div.box_02').css('color', 'red')
 
-    $('div[class], p[class], strong[class]').css('color', 'white')
+    // $('div[class], p[class], strong[class]').css('color', 'white')
 });
 
 /*
@@ -94,4 +94,16 @@ $(function () {
         //alert("click me!!!")
         $('.animate').toggle(1000)
     })
+
+    $('p.slide_class').click(function(){
+        console.log('p click slide!!!')
+        $('.slide_div').slideToggle('slow');
+    })
+
+    $('p.animate_class').click(function (e) { 
+        $('div.animate_div').animate({
+            width:'+=200px',
+            opacity: 0.5,
+        })
+    });
 });
